@@ -11,7 +11,7 @@ body{
 
     header{
         height: 300px;
-            background-image: url("../images/header_Tło_image.png");
+            background-image: url("images/header_Tło_image.png");
             background-size: 1600px auto;
             background-position: center 40%;
             background-repeat: no-repeat;
@@ -179,7 +179,7 @@ body{
                     flex-shrink: 0;
                     box-shadow: 1px 1px 3px rgba(232, 187, 195, 0.729);
                     
-                        background-image: url("../images/Miecz_Unknown.jpg");
+                        background-image: url("images/Miecz_Unknown.jpg");
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: 100%;
@@ -191,19 +191,19 @@ body{
                 }
                     /* Pierwsze */
                 #Survival{
-                        background-image: url("../images/Miecz_Unknown.jpg");
+                        background-image: url("images/Miecz_Unknown.jpg");
                 }
                     /*Drugie*/
                 #PvP{
-                        background-image: url("../images/PvP_Unknown-2.jpg");
+                        background-image: url("images/PvP_Unknown-2.jpg");
                 }
                     /*Trzecie*/
                 #Eventy{
-                        background-image: url("../images/Skrzynia_Unknown-3.jpg");
+                        background-image: url("images/Skrzynia_Unknown-3.jpg");
                 }
                     /*Czwarte*/
                  #Spolecznosc{
-                        background-image: url("../images/Spolecznosc_Unknown-4.jpg");
+                        background-image: url("images/Spolecznosc_Unknown-4.jpg");
                 }
                 
                     /*Glowny napis h3 w okienkach*/
@@ -347,7 +347,7 @@ body{
                 width: 600px;
                 height: auto;
                 margin: 6px;
-                    background-image: url("../images/Obraz_W_Szerokim_Polu_image.png");
+                    background-image: url("images/Obraz_W_Szerokim_Polu_image.png");
                     background-repeat: no-repeat;
                     background-position: center -5px;
                     background-size: cover;
@@ -483,7 +483,7 @@ body{
     align-items: center;
 
         margin-bottom:1px;
-            background-image: url(../images/Footer_Tlo_image.png);
+            background-image: url(images/Footer_Tlo_image.png);
             background-position: center -200px;
             background-repeat: no-repeat;
             background-size: 1600px auto;
@@ -499,7 +499,7 @@ body{
     #ZdjecieDirtaWKontenerze{
         width: 100px;
         height: 100px;
-            background-image: url("../images/Blok_Trawy_minecraft_bez_tla_image.png");
+            background-image: url("images/Blok_Trawy_minecraft_bez_tla_image.png");
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -538,15 +538,15 @@ body{
 
                 /* 3 zdjecia Discorda, Poczty, Strony */
                 #LimonkoweLogoDiscord{
-                        background-image: url("../images/Limonkowe_Logo_Discord_image.png");
+                        background-image: url("images/Limonkowe_Logo_Discord_image.png");
                         
                 }
                 #LimonkoweLogoPoczta{
-                        background-image: url("../images/Limonkowe_Logo_Poczty_image.png");
+                        background-image: url("images/Limonkowe_Logo_Poczty_image.png");
                         
                 }
                 #LimonkoweLogoStrona{
-                        background-image: url("../images/Limonkowe_Logo_Strony_image.png");
+                        background-image: url("images/Limonkowe_Logo_Strony_image.png");
                         
                 }
                 
@@ -570,19 +570,19 @@ body{
         }
         /* Pierwsze, Logo dicorda */
         #LogoDiscord{
-                background-image: url("../images/Logo_Discord_image.png");
+                background-image: url("images/Logo_Discord_image.png");
         }
         /* Drugie, Logo facebooka */
         #LogoFacebook{
-                background-image: url("../images/Logo_Facebook_image.png");
+                background-image: url("images/Logo_Facebook_image.png");
         }
         /* Trzecie, Logo youtube */
         #LogoYoutube{
-                background-image: url("../images/Logo_Youtube_image.png");
+                background-image: url("images/Logo_Youtube_image.png");
         }
         /* Czwarte, Logo tiktoka */
         #LogoTiktok{
-                background-image: url("../images/Logo_Tiktok_image.png");
+                background-image: url("images/Logo_Tiktok_image.png");
         }
 
      /* Prawa zastrzezone */
