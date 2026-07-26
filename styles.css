@@ -1,0 +1,598 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    color: white;
+}
+
+    /*Tło headera*/
+
+    header{
+        height: 300px;
+            background-image: url("../images/header_Tło_image.png");
+            background-size: 1600px auto;
+            background-position: center 40%;
+            background-repeat: no-repeat;
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+    }
+
+            /*Nav caly obszaar*/
+
+            #navigacjaStrony{
+                width: 1000px;
+                height: 50px;
+                letter-spacing: 1px;
+                    background-color: rgba(51, 53, 53, 0.739);
+                        border: solid 2px;
+                        border-color: rgb(130, 181, 0);
+                        border-radius: 7px;
+
+                            margin-bottom: 30px;
+                                display: flex;
+                                align-items: center;    
+            }
+
+            /*Wszystkie a hrefy*/
+
+                a {
+                    color: white;
+                        text-decoration: none;
+                            text-shadow:-1px -1px 0 black,
+                                        1px -1px 0 black,
+                                        -1px 1px 0 black,
+                                        1px 1px 0 black,
+                                        2px 2px 5px skyblue;
+                        cursor: pointer;
+                    }
+                    a:hover{
+                        color:rgb(190, 252, 34);
+                    }
+
+                    /*h3 Napisy w oknie nav*/
+                            
+                    .navigacjnePrzyciskiGlowne{
+                        border-right: 1px solid rgba(90, 88, 88, 0.812);
+                        height: 29px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex: 1;
+                            white-space: nowrap; 
+                                transition: transform 0.3s;
+                    }           
+                    .navigacjnePrzyciskiGlowne:hover{
+                        transform: scale(1.05);
+                    }
+                     .navigacjnePrzyciskiGlowne:last-child{
+                            border-right: none;         /*usuwa ostatnia kreske*/
+                    }
+
+
+                /*Main tło*/                    
+    main{
+        min-height: 525px;
+                background-color: rgb(30, 31, 31);
+                border: 4px solid rgb(38, 38, 38);
+                border-bottom: none;
+        }
+            #glownyNapisWitaj{
+                display: flex;
+                justify-content: center;
+            }
+
+                /*Span podloga, linia kolo glownego napisu*/
+
+                #PodlogaObokWitajPrawy{
+                    display: inline-block;
+                    width: 230px;
+                    height: 2px;
+                        background: linear-gradient(
+                         to right,
+                        transparent,
+                        rgb(40, 90, 30),
+                        rgb(90, 160, 20),       /*tworzenie zanikajacej lini kolo glownego napisu*/
+                        rgb(190, 252, 34),
+                        transparent
+                        );
+                    position: relative;
+                    bottom: 7px;
+                }
+                #PodlogaObokWitajLewy{
+                    display: inline-block;
+                    width: 230px;
+                    height: 2px;
+                        background: linear-gradient(
+                        to left,
+                        transparent,
+                        rgb(40, 90, 30),
+                        rgb(90, 160, 20),       
+                        rgb(190, 252, 34),
+                        transparent
+                        );
+                    position: relative;
+                    bottom: 7px;
+                }
+
+                        #ZnaczekObroconyKwadratLewy{
+                            color: rgb(130, 181, 0);
+                            position: relative;
+                            right: 12px;
+                        }
+
+                        #ZnaczekObroconyKwadratPrawy{
+                            color: rgb(130, 181, 0);
+                            position: relative;
+                            left: 12px;
+                        }
+
+            
+            /*Akapit napis pod Glownym napisem*/
+
+            #tekstPodNapisWitaj{
+                color: rgb(124, 117, 117);
+                text-shadow: 1px 1px 1px rgb(93, 90, 90);
+                font-size: 18px;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 1px;
+                margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+            }
+
+
+            /*Okienka pod akapitem*/
+
+#NajwiekszyKontenerWszystkichOkienek{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+            /*div Kontener wszystkich osobnych okienek*/
+
+        .GlownyKontenerMalychPol{
+            background-color: rgb(30, 31, 31);
+                width: 300px;
+                height: 170px;
+                    border: solid 2px;
+                    border-color: rgba(64, 64, 64, 0.767);
+                    border-radius: 5px;
+
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+        }
+
+                    /* Div Zdjecia w okienkach */
+
+                    .MiniZdjeciaW4Polach{
+                    width: 80px;
+                    height: 82px;
+                    flex-shrink: 0;
+                    box-shadow: 1px 1px 3px rgba(232, 187, 195, 0.729);
+                    
+                        background-image: url("../images/Miecz_Unknown.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 100%;
+                            border: solid 2px;
+                            border-color: rgba(64, 64, 64, 0.767);
+                            border-radius: 5px;
+                                margin-top: 15px;
+                                margin-left: 5px;
+                }
+                    /* Pierwsze */
+                #Survival{
+                        background-image: url("../images/Miecz_Unknown.jpg");
+                }
+                    /*Drugie*/
+                #PvP{
+                        background-image: url("../images/PvP_Unknown-2.jpg");
+                }
+                    /*Trzecie*/
+                #Eventy{
+                        background-image: url("../images/Skrzynia_Unknown-3.jpg");
+                }
+                    /*Czwarte*/
+                 #Spolecznosc{
+                        background-image: url("../images/Spolecznosc_Unknown-4.jpg");
+                }
+                
+                    /*Glowny napis h3 w okienkach*/
+
+                    .GlownyNapisWKontenerach{
+                        font-size: 25px;
+                            align-self:center;
+                            margin-top: -58px;
+                            margin-left: 60px;
+                    }
+                    /*Zmiana koloru napisow Glownych*/
+
+                    #ZmianaKoloruGlownegoNapisu1{
+                        color: rgb(191, 250, 42);
+                        text-shadow: 1px 1px 8px rgba(191, 250, 42, 0.814);
+                    }
+                    #ZmianaKoloruGlownegoNapisu2{
+                        color:rgb(234, 166, 48);
+                        text-shadow: 1px 1px 8px rgb(234, 166, 48);
+                    }
+                    #ZmianaKoloruGlownegoNapisu3{
+                        color:rgb(38, 156, 235);
+                        text-shadow: 1px 1px 8px rgb(38, 156, 235);
+                    }
+                    #ZmianaKoloruGlownegoNapisu4{
+                        color:rgb(159, 25, 243);
+                        text-shadow: 1px 1px 8px rgb(159, 25, 243);
+                        margin-left: 25px;
+                    }
+                    /*Napis: blockverse w tytule,*/
+                    .TeNapisyNaZielono{
+                        color: rgb(191, 250, 42);
+                    }
+
+
+
+
+                                /*Akapity p w okienkach kolo Survival, eveny i tp*/
+
+                                .AkapityW4Polach{
+                                    color: rgb(233, 239, 239);
+                                    width: 195px;
+                                        font-size: 11px;
+                                        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                            align-self:flex-end;
+                                            margin-top: 10px;
+                                            margin-right: 5px;
+                                }
+                                
+
+                        /*Div Przycisk w okienkach*/
+
+                        .PrzyciskW4polach{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 10px;
+                        }
+                                .PrzyciskW4polach button{
+                                    width: 230px;
+                                    height: 40px;
+                                    cursor: pointer;
+                                        border: solid 2px;
+                                        border-radius: 7px;
+                                        transition: 0.3s;
+                                        font-size: 14px;
+                                }
+                                .PrzyciskW4polach button:hover{
+                                        transform: scale(1.05);
+                                }
+                                               
+                                                /*button id, wszystkie przyciski w okienkach*/
+
+                                                #przyciskW4polachNr1{
+                                                    color: rgb(191, 250, 42);
+                                                    background-color: rgba(188, 251, 30, 0.179);
+                                                    border-color: rgba(191, 250, 42, 0.327);
+                                                    text-shadow: 1px 3px 4px rgb(0, 0, 0),
+                                                    0px 0px 2px white;
+                                                }    
+                                                #przyciskW4polachNr2{
+                                                    color:rgb(247, 175, 52);
+                                                    background-color: rgba(234, 166, 48, 0.498);
+                                                    border-color: rgba(234, 166, 48, 0.682);
+                                                    text-shadow: 1px 3px 4px rgb(0, 0, 0),
+                                                    0px 0px 1px white;
+                                                }    
+                                                #przyciskW4polachNr3{
+                                                    color:rgb(41, 165, 248);
+                                                    background-color: rgba(38, 156, 235, 0.457);
+                                                    border-color: rgba(38, 156, 235, 0.586);
+                                                    text-shadow: 1px 3px 4px rgb(0, 0, 0),
+                                                    0px 0px 1px white;
+                                                }    
+                                                #przyciskW4polachNr4{
+                                                    color:rgb(159, 25, 243);
+                                                    background-color: rgba(159, 25, 243, 0.377);
+                                                    border-color: rgba(159, 25, 243, 0.482);
+                                                    text-shadow: 1px 3px 4px rgb(0, 0, 0),
+                                                    0px 0px 1px white;
+                                                    
+                                                }    
+/*Div pusty na linie*/
+
+#RodzicZnikajacaLiniaPodGlownymiPolami{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+    .ZnikajacaLiniaPodGlownymiPolami{
+        display: inline-block;
+            width: 95%;
+            height: 2px;
+                background: linear-gradient(
+                 to right,
+                transparent,
+                rgb(40, 90, 30),
+                rgb(90, 160, 20),
+                rgb(90, 160, 20),
+                rgb(90, 160, 20),
+                rgb(40, 90, 30),
+                transparent
+                );
+    }       
+
+    /*Tworzenie jednego szerszego pola pod linia*/
+    #KontenerJednegoSzerokiegoPola{
+        width: 100%;
+        max-width: 1260px;
+        height: 200px;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            flex-wrap: wrap;
+
+                background-color: rgb(30, 31, 31);
+                border: solid 2px rgba(64, 64, 64, 0.767);
+                border-radius: 7px;
+    }
+            /*Obszar obrazka w szerokim polu*/
+            #ObrazWSzerokimPolu{
+                width: 600px;
+                height: auto;
+                margin: 6px;
+                    background-image: url("../images/Obraz_W_Szerokim_Polu_image.png");
+                    background-repeat: no-repeat;
+                    background-position: center -5px;
+                    background-size: cover;
+                        border: solid 2px rgba(84, 83, 83, 0.767);
+                        border-radius: 7px;
+                        box-shadow:
+                            1px 1px 3px rgba(244, 225, 225, 0.666),
+                            -1px -1px 3px rgba(244, 255, 255, 0.666);
+                        
+            }
+
+                    /* Wszystkie napisy z przyciskiem w szerokim polu bez obrazka */
+                    #NapisyWSzerokimPolu{
+                        display: flex;
+                        flex-direction: column;
+
+                    }
+                        /* Glowny napis h3 w szerokim polu */
+                        #KontenerJednegoSzerokiegoPola h3{
+                            width: 370px;
+                            height: 30px;
+                                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                font-size: 25px;
+                                margin-left: 30px;
+                                margin-top: 25px;
+                        }
+                        /* p tekst id serwera */
+                        #idSerweraNapis{
+                            width: 280px;
+                            height: 20px;
+                            margin-left: 30px;
+                            margin-top: 7px;
+                        }   
+                            /* Status graczy i kreski top bottom */
+                            #StatusSerwera{
+                                width: 530px;
+                                    padding: 6px;
+                                    margin-left: 30px;
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+
+                            }
+                            /* Samo pole online */
+                            #PoleZNapisemOnline{
+                                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                                background-color: rgba(45, 85, 21);
+                                    border: solid 1px rgba(71, 108, 32);
+                                    border-radius: 7px;
+                                        margin-left: 20px;
+                                        margin-right: 70px;
+                                            padding-right: 2px;
+                                            padding-left: 2px;
+                                            padding-top: 1px;
+                                            padding-bottom: 1px;
+                            }    
+                            /* Dwie linie Pod nad napisu Online */
+                            #LiniaNadOnline{
+                                display: inline-block;
+                                    width: 580px;
+                                    height: 2px;
+                                        background: linear-gradient(
+                                            to left,
+                                            transparent,
+                                            rgba(133, 219, 47, 0.763),
+                                            rgb(133, 219, 47),
+                                            rgba(133, 219, 47, 0.763),
+                                            transparent
+                                        );
+                                        position: relative;
+                                        top: 7px;
+                            }
+                            #LiniaPodOnline{
+                                display: inline-block;
+                                    width: 580px;
+                                    height: 2px;
+                                        background: linear-gradient(
+                                            to left,
+                                            transparent,
+                                            rgba(133, 219, 47, 0.763),
+                                            rgb(133, 219, 47),
+                                            rgba(133, 219, 47, 0.763),
+                                            transparent
+                                        );
+                                        position: relative;
+                                        bottom: 7px;
+                            }
+                            
+                                    /* Faktyczna liczba graczy online span */
+                                    #LiczbaGraczyOnline{
+                                        padding-left: 15px;
+                                    }
+                                    /* Przycisk w szerokim polu */
+                    #KontenerJednegoSzerokiegoPola button{
+                        width: 200px;
+                        height: 40px;
+                            color: white;
+                            font-family:Georgia, 'Times New Roman', Times, serif;
+                            font-size: 15px;
+                            text-shadow:
+                            1px 1px 1px rgba(0, 0, 0, 0.379),
+                            -1px -1px 1px rgba(0, 0, 0, 0.379);
+                            box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.515);
+                                background-color: rgba(45, 85, 21);
+                                    border: solid 2px rgba(71, 108, 32);
+                                    border-radius: 7px;
+                                        margin-left: 30px;
+                                        margin: auto; 
+                                            transition: 0.3s;
+                                            cursor: pointer;
+
+                    }                
+                    #KontenerJednegoSzerokiegoPola button:hover{
+                        color:rgba(255, 0, 0, 0.894);
+                        transform: scale(1.05);
+                    }
+                    
+
+/* Poczatek footer */
+
+ footer{
+    min-height: 200px;
+        background-color: rgb(30, 31, 31);
+        border: 4px solid rgb(38, 38, 38);
+        border-top: none;
+}
+/* div Glownego kontenera */
+#GlownyKontenerFootera{
+    height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+        margin-bottom:1px;
+            background-image: url(../images/Footer_Tlo_image.png);
+            background-position: center -200px;
+            background-repeat: no-repeat;
+            background-size: 1600px auto;
+                border-top: solid 2px rgba(64, 64, 64, 0.767);
+                border-bottom: solid 2px rgba(64, 64, 64, 0.767);
+}
+#GlownyKontenerFootera h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#d1d6da;
+    margin-bottom: 5%;
+}
+    /* Samo zdjecie dirta */
+    #ZdjecieDirtaWKontenerze{
+        width: 100px;
+        height: 100px;
+            background-image: url("../images/Blok_Trawy_minecraft_bez_tla_image.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+    }
+    /* Wszystkie napisy w tym polu */
+    #KontenerNapisowBezObrazka{
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    }
+
+            #MarginesSzybkichLinkow p{
+                margin-top: 3px;
+            }
+
+            /* Ustawianie pozycji */
+            #Kontener3LogoKontakt{
+                display: flex;
+                flex-direction: column;
+            }
+            .MniejszyKontener3LogoKontakt{
+                display: flex;
+            }
+                            /* Podniesienie lekko tylko loga kontaktow */
+                            .LogoSociali{
+                                width: 30px;
+                                height: 30px;
+                                margin-top: -3px;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                            }
+
+                /* 3 zdjecia Discorda, Poczty, Strony */
+                #LimonkoweLogoDiscord{
+                        background-image: url("../images/Limonkowe_Logo_Discord_image.png");
+                        
+                }
+                #LimonkoweLogoPoczta{
+                        background-image: url("../images/Limonkowe_Logo_Poczty_image.png");
+                        
+                }
+                #LimonkoweLogoStrona{
+                        background-image: url("../images/Limonkowe_Logo_Strony_image.png");
+                        
+                }
+                
+
+#Grupa4ZdjecSociali{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+
+}
+        /* Wszystkie 4 loga Platform */
+        .LogoPlatform{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; 
+                    border: solid 1px white;
+                    border-radius: 7px;
+        }
+        /* Pierwsze, Logo dicorda */
+        #LogoDiscord{
+                background-image: url("../images/Logo_Discord_image.png");
+        }
+        /* Drugie, Logo facebooka */
+        #LogoFacebook{
+                background-image: url("../images/Logo_Facebook_image.png");
+        }
+        /* Trzecie, Logo youtube */
+        #LogoYoutube{
+                background-image: url("../images/Logo_Youtube_image.png");
+        }
+        /* Czwarte, Logo tiktoka */
+        #LogoTiktok{
+                background-image: url("../images/Logo_Tiktok_image.png");
+        }
+
+     /* Prawa zastrzezone */
+#Copyright{
+    height: 45px;
+    font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            color: rgb(150, 150, 150);
+            background-color: rgb(24, 24, 24);
+
+}
