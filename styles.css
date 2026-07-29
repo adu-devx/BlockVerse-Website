@@ -683,11 +683,11 @@ body{
 
         }
         #navigacjaStrony{
-            width: 80%;
+            width: 94%;
             height: 40px;
 
                 flex-wrap: nowrap;
-                font-size: 10px;
+                font-size: 13px;
                 padding: 10px;
                 gap: 10px;
         }

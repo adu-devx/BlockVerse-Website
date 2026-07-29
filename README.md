@@ -32,6 +32,8 @@ This project was built to practice HTML, CSS, Git and GitHub while learning fron
 <p align="center">
   <img src="readme-images/Strona_BlockVerse-1.png" width="48%">
   <img src="readme-images/Strona_BlockVerse-2.png" width="48%">
+  <img src="readme-images/Strona_BlockVerse-3.png" width="48%">
+  <img src="readme-images/Strona_BlockVerse-4.png" width="48%">
 </p>
 
 ---
